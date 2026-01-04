@@ -1,0 +1,188 @@
+/* Gallery Page Specific Styles */
+
+/* Gallery Header */
+.gallery-header {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 120px 20px 80px;
+    text-align: center;
+    margin-top: 70px;
+}
+
+.gallery-title {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+    animation: fadeInUp 1s ease;
+}
+
+.gallery-subtitle {
+    font-size: 1.2rem;
+    opacity: 0.95;
+    max-width: 700px;
+    margin: 0 auto;
+    animation: fadeInUp 1s ease 0.2s backwards;
+}
+
+/* Art Collection Section */
+.art-collection {
+    padding: 80px 20px;
+    background: #f8f9fa;
+}
+
+.art-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 40px;
+    margin-top: 2rem;
+}
+
+/* Art Card */
+.art-card {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: fadeInUp 0.6s ease forwards;
+}
+
+.art-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+}
+
+/* Art Image */
+.art-image {
+    width: 100%;
+    height: 350px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+/* Art Details */
+.art-details {
+    padding: 25px;
+}
+
+.art-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #2c3e50;
+    margin-bottom: 12px;
+}
+
+.art-artist {
+    font-size: 1.05rem;
+    color: #667eea;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.art-info {
+    font-size: 0.95rem;
+    color: #666;
+    margin-bottom: 6px;
+    line-height: 1.6;
+}
+
+.art-price {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #764ba2;
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 2px solid #f0f0f0;
+}
+
+/* Artwork backgrounds - matching the existing style */
+.artwork-1 {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.artwork-2 {
+    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+}
+
+.artwork-3 {
+    background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+}
+
+.artwork-4 {
+    background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);
+}
+
+.artwork-5 {
+    background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);
+}
+
+.artwork-6 {
+    background: linear-gradient(135deg, #30cfd0 0%, #330867 100%);
+}
+
+.artwork-7 {
+    background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
+}
+
+.artwork-8 {
+    background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 100%);
+}
+
+.artwork-9 {
+    background: linear-gradient(135deg, #a1c4fd 0%, #c2e9fb 100%);
+}
+
+.artwork-10 {
+    background: linear-gradient(135deg, #fbc2eb 0%, #a6c1ee 100%);
+}
+
+.artwork-11 {
+    background: linear-gradient(135deg, #fdcbf1 0%, #e6dee9 100%);
+}
+
+.artwork-12 {
+    background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+}
+
+/* Responsive Design for Gallery Page */
+@media (max-width: 768px) {
+    .gallery-title {
+        font-size: 2.2rem;
+    }
+
+    .gallery-subtitle {
+        font-size: 1rem;
+    }
+
+    .art-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .art-image {
+        height: 300px;
+    }
+}
+
+@media (max-width: 480px) {
+    .gallery-title {
+        font-size: 1.8rem;
+    }
+
+    .gallery-subtitle {
+        font-size: 0.95rem;
+    }
+
+    .art-details {
+        padding: 20px;
+    }
+
+    .art-title {
+        font-size: 1.3rem;
+    }
+
+    .art-price {
+        font-size: 1.2rem;
+    }
+}
