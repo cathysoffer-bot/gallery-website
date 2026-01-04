@@ -14,8 +14,11 @@ A modern, responsive homepage for an art gallery website featuring contemporary 
 ## Files
 
 - `index.html` - Main homepage structure
+- `gallery.html` - Dedicated art gallery page with artwork details
 - `styles.css` - Styling and responsive design
+- `gallery-styles.css` - Gallery page specific styles
 - `script.js` - Interactive functionality
+- `gallery-script.js` - Gallery page specific functionality
 
 ## How to View
 
@@ -29,12 +32,23 @@ Then navigate to `http://localhost:8080/index.html`
 
 ## Sections
 
+### Homepage (index.html)
 1. **Navigation Bar**: Fixed header with links to all sections
 2. **Hero Section**: Eye-catching introduction with call-to-action
 3. **Gallery Section**: Grid of featured artwork with hover overlays
 4. **About Section**: Gallery mission and key features
 5. **Contact Section**: Visitor information and contact details
 6. **Footer**: Copyright and social media links
+
+### Gallery Page (gallery.html)
+1. **Navigation Bar**: Fixed header with links to all sections
+2. **Gallery Header**: Title and description of the art collection
+3. **Art Collection**: Grid of 12 artworks with detailed information:
+   - Artist name
+   - Size (dimensions)
+   - Year created
+   - Price
+4. **Footer**: Copyright and social media links
 
 ## Browser Compatibility
 
